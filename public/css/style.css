@@ -1,0 +1,15 @@
+body {
+    background-color: #75b5f5;
+}
+.card {
+    margin-bottom: 20px;
+}
+.card img {
+    max-height: 200px;
+    object-fit: cover;
+}
+#suggestions {
+    position: absolute;
+    z-index: 1000;
+    width: calc(100% - 20px);
+}

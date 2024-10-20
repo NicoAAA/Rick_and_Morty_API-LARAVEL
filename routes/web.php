@@ -9,4 +9,7 @@ Route::get('/', function () {
 });
 
 // Ruta para obtener los personajes de Rick y Morty
-Route::get('/characters', [RickMortyController::class, 'getcharacters']); 
+Route::get('/characters', [RickMortyController::class, 'getCharacters'])->name('characters'); 
+
+// Ruta para autocompletar
+Route::get('/characters/autocomplete', [RickMortyController::class, 'autocomplete'])->name('autocomplete');
